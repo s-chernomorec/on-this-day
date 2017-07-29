@@ -1,3 +1,5 @@
+[Open app](https://on-this-day-app.herokuapp.com/)
+
 This app uses Wikipedia API to fetch data about historical events that happened on this day.
 Built with mobile-First approach.
 
