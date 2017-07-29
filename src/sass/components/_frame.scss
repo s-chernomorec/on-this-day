@@ -1,0 +1,19 @@
+@import "common/variables";
+
+.frame {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.2);
+  font: 14px 'Open Sans', sans-serif;
+  color: $darker-gray;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .frame {
+    max-width: 1200px;
+  }
+
+}

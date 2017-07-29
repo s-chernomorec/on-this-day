@@ -1,0 +1,20 @@
+$fade-duration: 300ms;
+$fade-function: ease-in;
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity $fade-duration $fade-function;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity $fade-duration $fade-function;
+}

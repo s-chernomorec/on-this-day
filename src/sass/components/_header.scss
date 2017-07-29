@@ -1,0 +1,50 @@
+@import "common/variables";
+@import "common/mixins";
+
+.header-wrapper {
+  width: 100%;
+  min-width: 320px;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid $gray;
+}
+
+.header {
+  @include clearfix();
+  height: 48px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.title-block {
+  float: left;
+  height: 100%;
+  padding-left: 10px;
+
+  .title-header {
+    display: block;
+  }
+
+  .title-header {
+    font: 24px 'Kaushan Script', sans-serif;
+    line-height: 48px;
+    color: #000;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    height: 80px;
+  }
+
+  .title-block {
+    padding-left: 30px;
+
+    .title-header {
+      font-size: 32px;
+      line-height: 80px;
+    }
+  }
+}

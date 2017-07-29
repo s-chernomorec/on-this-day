@@ -1,0 +1,36 @@
+@import "common/variables";
+
+
+.day-content {
+  min-height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.day-header-wrapper {
+  width: 100%;
+  height: 100%;
+
+  .day-header {
+    text-align: center;
+    font: 18px 'Open Sans SB', sans-serif;
+    line-height: 48px;
+    color: $darker-gray;
+  }
+}
+
+.day-description {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 30px 20px;
+  font: 14px 'Open Sans', sans-serif;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .day-header {
+    font-size: 22px;
+    line-height: 72px;
+  }
+
+}

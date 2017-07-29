@@ -1,0 +1,17 @@
+@import "common/variables";
+
+
+.day-block {
+  display: table;
+  position: relative;
+  min-height: 48px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .day-block-wrapper {
+    padding: 0 20px;
+  }
+
+}

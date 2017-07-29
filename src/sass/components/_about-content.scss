@@ -1,0 +1,38 @@
+@import "common/variables";
+
+.about-content-wrapper {
+  padding: 10px;
+  font: 14px 'Open Sans', sans-serif;
+  color: $darker-gray;
+}
+
+.about-content {
+  padding: 20px;
+}
+
+.about-paragraph {
+  margin-bottom: 16px;
+}
+
+.about-link {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #D8893D;
+
+  &:hover {
+    color: #000;
+  }
+}
+
+.about-list li {
+  list-style: circle inside;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .about-content-wrapper {
+    padding: 0 20px;
+    font-size: 16px;
+  }
+
+}

@@ -1,0 +1,37 @@
+@import "common/variables";
+
+
+.bookmarks-content-wrapper {
+  padding: 10px;
+  margin-bottom: 6px;
+  font: 14px 'Open Sans', sans-serif;
+  color: $darker-gray;
+}
+
+.bookmarks-content {
+  padding: 10px;
+}
+
+.bookmarks-placeholder {
+  padding: 10px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .bookmarks-content-wrapper {
+    padding: 0 20px;
+    font-size: 16px;
+  }
+
+  .bookmarks-content {
+    column-count: 2;
+    column-gap: 10px;
+  }
+
+  .bookmarks-placeholder {
+    font-size: 16px;
+    padding: 30px;
+  }
+
+}

@@ -1,0 +1,23 @@
+@import "common/variables";
+
+.top-menu-item {
+  float: left;
+  height: 100%;
+  width: 50%;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font: 12px 'Open Sans', sans-serif;
+  transition: all 200ms ease-in-out;
+
+  a { line-height: 32px; }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .top-menu-item a {
+    color: $darker-gray;
+    line-height: 80px;
+    cursor: pointer;
+  }
+}

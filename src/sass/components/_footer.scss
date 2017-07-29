@@ -1,0 +1,45 @@
+@import "common/variables";
+
+.footer {
+  display: table;
+  height: 32px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-top: -32px;
+  font: 14px 'Open Sans', sans-serif;
+  background-color: $darker-gray;
+}
+
+.footer-text,
+.footer-github {
+  display: table-cell;
+  height: 100%;
+  color: #fff;
+}
+
+.footer-text {
+  padding-left: 10px;
+  vertical-align: middle;
+}
+
+.footer-github {
+  width: 32px;
+  text-align: center;
+
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    span {
+      line-height: 32px;
+      font-size: 24px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+}

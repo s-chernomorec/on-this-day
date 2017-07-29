@@ -1,0 +1,52 @@
+@import "common/variables";
+
+.event-types-menu-item {
+  float: left;
+  height: 100%;
+  text-align: center;
+  font: 12px 'Open Sans', sans-serif;
+  transition: all 200ms ease-in-out;
+  background-color: #fff;
+  border-bottom: 1px solid $gray;
+
+  span {
+    color: $darker-gray;
+    line-height: 32px;
+    cursor: pointer;
+  }
+}
+
+.event-types-menu-item-is-active {
+  background: none;
+
+  span {
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .event-types-menu-item {
+    color: darken($gray, 10%);
+    background: none;
+    border-bottom: none;
+
+    span {
+      color: $darker-gray;
+      line-height: 80px;
+      transition: all 200ms ease-in;
+
+      &:hover { color: darken($gray, 20%); }
+    }
+  }
+
+  .event-types-menu-item-is-active {
+
+    span {
+      color: $darker-gray;
+      border-bottom: 1px solid $darker-gray;
+
+      &:hover { color: darken($darker-gray, 20%); }
+    }
+  }
+}

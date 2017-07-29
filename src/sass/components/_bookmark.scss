@@ -1,0 +1,70 @@
+@import "common/variables";
+
+.bookmark {
+  padding: 0 10px;
+  margin-bottom: 10px;
+  font: 14px 'Open Sans', sans-serif;
+  border: 1px solid $gray;
+  color: $darker-gray;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.07);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.bookmark-head {
+  display: table;
+  width: 100%;
+  border-bottom: 1px solid $gray;
+  height: 24px;
+  line-height: 24px;
+}
+
+.bookmark-date,
+.bookmark-type,
+.bookmark-remove-button {
+  display: table-cell;
+}
+
+.bookmark-date,
+.bookmark-type {
+  text-align: left;
+}
+
+.bookmark-date {
+  width: 50%;
+}
+
+.bookmark-type {
+  width: 30%;
+  text-transform: capitalize;
+  font-weight: 900;
+}
+
+.bookmark-remove-button {
+  text-align: right;
+  width: 20%;
+
+  span {
+    cursor: pointer;
+
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+.bookmark-content {
+  padding: 10px 0;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .bookmark {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid lighten($gray, 10%);
+  }
+
+}

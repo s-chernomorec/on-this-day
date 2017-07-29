@@ -1,0 +1,31 @@
+@import "common/variables";
+
+.events-section-wrapper {
+  padding: 10px;
+}
+
+.events-section-title-block {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid $gray;
+
+  .events-section-title {
+    font: 18px 'Open Sans SB', sans-serif;
+    color: $darker-gray;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .events-section-wrapper {
+    padding: 0 20px 20px 20px;
+  }
+
+  .events-section-content {
+    padding: 10px;
+    column-count: 2;
+    column-gap: 10px;
+  }
+
+}

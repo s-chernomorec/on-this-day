@@ -1,0 +1,59 @@
+@import "common/variables";
+
+.event {
+  display: table;
+  width: 100%;
+  padding: 10px;
+  font: 14px 'Open Sans', sans-serif;
+  border-bottom: 1px solid $gray;
+  color: $darker-gray;
+}
+
+.event-head,
+.event-content {
+  display: table-cell;
+}
+
+.event-head {
+  border-right: 1px dotted $gray;
+  width: 40px;
+
+  .event-date,
+  .event-button-bookmark {
+    display: block;
+    margin-left: -10px;
+    text-align: center;
+  }
+
+  .event-date {
+    // padding: 0 5px;
+  }
+
+  .event-button-bookmark {
+    padding-top: 5px;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+.event-content {
+  min-width: 1px;
+  max-width: 100%;
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .event {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 6px;
+    border: 1px solid lighten($gray, 10%);
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.07);
+  }
+
+}

@@ -1,0 +1,14 @@
+@import "common/variables";
+
+
+.event-types-menu {
+  background-color: $darker-gray;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .event-types-menu {
+    background: none;
+    margin: 0 auto;
+  }
+}
